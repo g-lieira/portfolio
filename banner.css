@@ -6,6 +6,8 @@
   .light1 {
     top: 36%;
     left: -6%;
+    width: 600px;
+    height: 650px;
     transform: rotate(-90deg);
     filter: blur(150px);
     animation: move1 15s linear infinite;
@@ -14,6 +16,8 @@
   .light2 {
     left: 14%;
     top: -62%;
+    width: 700px;
+    height: 750px;
     transform: rotate(110.024deg);
     filter: blur(150px);
     animation: move2 15s linear infinite;
@@ -22,6 +26,8 @@
   .light3 {
     top: 20%;
     left: 45%;
+    width: 800px;
+    height: 850px;
     transform: rotate(110.024deg);
     filter: blur(150px);
     animation: move3 15s linear infinite;
@@ -31,6 +37,8 @@
   .light4 {
     right: -8%;
     top: -38%;
+    width: 654px;
+    height: 650px;
     transform: rotate(110.024deg);
     filter: blur(150px);
     animation: move4 15s linear infinite;
@@ -39,6 +47,8 @@
   .light5 {
     top: -15%;
     right: -5%;
+    width: 700px;
+    height: 647px;
     transform: rotate(110.024deg);
     filter: blur(150px);
     animation: move5 15s linear infinite;

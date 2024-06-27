@@ -16,6 +16,11 @@
     text-decoration: none;
   }
 
+  body {
+    overflow-x: hidden;
+    background-color: #090A0C;
+  }
+
   /*HEADER*/
 
   .header {
@@ -26,6 +31,10 @@
     align-items: center;
     justify-content: flex-end;
     z-index: 100;
+}
+
+.header-black {
+    background-color: #090A0C;
 }
 
 nav {
@@ -69,31 +78,41 @@ nav {
   transform: scale(1, 1);
 }
 
+.shadow {
+    background: rgba(9, 10, 12, 0.50);
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    z-index: 1;
+}
+
 /*Banner*/
 
-.background {
-    position: fixed;
+.banner-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: #090A0C;
+    overflow: hidden;
 }
+
+
 
 .title {
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
+    z-index: 2;
 }
 
 .title h2 {
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
     color: #EAEAEA;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 .title h1 {
@@ -101,7 +120,156 @@ nav {
     background: linear-gradient(92deg, #EAEAEA 0.71%, #FF9ADB 35.67%, #718EFF 59.64%, #8590FF 79.11%, #CF96FF 100.58%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Syncopate;
-    font-size: 2rem;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 7rem;
     font-weight: 700;
+
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+/*SOBRE MIM*/
+
+.sobre-mim-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.sobre-mim-container h1 {
+    background: linear-gradient(91deg, #5C7EFF 0.05%,  #7844a3 10.58%, #FF41BB 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+
+
+.background-sobre-mim-v1 {
+    background: linear-gradient(90deg, rgba(71, 109, 254, 0.05) 0%, rgba(153, 31, 254, 0.05) 45%, rgba(255, 18, 170, 0.05) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Syncopate", sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    top: 58rem;
+    left: -4rem;
+    z-index: 1;
+}
+
+.background-sobre-mim-v2 {
+    background: linear-gradient(90deg, rgba(71, 109, 254, 0.05) 0%, rgba(153, 31, 254, 0.05) 45%, rgba(255, 18, 170, 0.05) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Syncopate", sans-serif;
+    font-size: 8rem;
+    font-weight: 700;
+
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    top: 95rem;
+    right: -35rem;
+    z-index: 1;
+}
+
+.conteudo-sobre-mim {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4%;
+    gap: 5rem;
+}
+
+.texto-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.texto-sobre-mim p {
+    font-size: 1rem;
+    color: #EAEAEA;
+}
+
+.texto-sobre-mim h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    color: #EAEAEA;
+    font-weight: 700;
+}
+
+.formacao-academica {
+    display: flex;
+    gap: 1rem;
+}
+
+.formacao-academica img {
+    width: 2rem;
+    height: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+.graduacao-sobre-mim {
+    display: flex;
+    flex-direction: column;
+}
+
+.graduacao-sobre-mim h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+
+.skills-sobre-mim {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 2rem 0;
+}
+
+.skills-sobre-mim div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    gap: 1rem;  
+}
+
+.skills-sobre-mim img {
+    width: 4rem;
+}
+
+.skills-sobre-mim p {
+    color: #EAEAEA;
+    font-size: 1rem;
 }

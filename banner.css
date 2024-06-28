@@ -55,15 +55,14 @@
   }
 
   .light6 {
-    right: -14%;
-    top: 0;
-    height: inherit;
+    right: 0;
+    top: -30%;
   }
   
   .light7 {
-    left: -5%;
-    top: 50%;
-    height: inherit;
+    left: 0;
+    top: 32%;
+    height: 1000px;
   }
   
 @keyframes move1 {

@@ -237,7 +237,6 @@ nav {
 
 .projetos-container {
   width: 100vw;
-  height: 100vh;
   padding: 5% 5% 4% 5%;
   position: relative;
   top: 0;
@@ -293,3 +292,51 @@ nav {
   line-height: 1.5rem;
 }
 
+/*CONTATO*/
+
+.contato-container {
+  width: 100vw;
+  padding: 5% 5% 4% 5%;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4%;
+  gap: 5rem;
+}
+
+.contato-content > p {
+  font-size: 1rem;
+  color: #EAEAEA;
+  text-align: center;
+  width: 70%;
+}
+
+.contato-links {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+
+.contato-links-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-links-box img{
+  width: 4rem;
+}
+
+.contato-links-box p{
+  font-size: 1rem;
+  color: #EAEAEA;
+}

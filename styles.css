@@ -270,21 +270,16 @@ nav {
   gap: 1rem;
 }
 
-.projetos-border {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem; /* Ajuste a largura da borda */
-  border-radius: 1rem; /* Bordas arredondadas */
-  background: linear-gradient(30deg, #5C7EFF 10.80%,  #7844a3 33.75%, #FF41BB 90.57%);
+.project-link {
+  cursor: pointer;
 }
 
-
-.projetos-content img {
+.project-link img {
   width: 20rem;
   border-radius: 1rem;
-  
 }
+
+
 
 
 .projetos-content p {

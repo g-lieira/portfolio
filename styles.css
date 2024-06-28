@@ -21,6 +21,27 @@
     background-color: #090A0C;
   }
 
+  .shadow {
+    background: rgba(9, 10, 12, 0.50);
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    z-index: 1;
+}
+
+  .section-titles {
+    background: linear-gradient(91deg, #5C7EFF 0.05%,  #7844a3 10.58%, #FF41BB 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
   /*HEADER*/
 
   .header {
@@ -78,14 +99,6 @@ nav {
   transform: scale(1, 1);
 }
 
-.shadow {
-    background: rgba(9, 10, 12, 0.50);
-    width: 100vw;
-    height: 200vh;
-    position: absolute;
-    z-index: 1;
-}
-
 /*Banner*/
 
 .banner-container {
@@ -134,62 +147,10 @@ nav {
 .sobre-mim-container {
     width: 100vw;
     height: 100vh;
-    padding: 5%;
+    padding: 5% 5% 4% 5%;
     position: relative;
+    top: 0;
     z-index: 2;
-}
-
-.sobre-mim-container h1 {
-    background: linear-gradient(91deg, #5C7EFF 0.05%,  #7844a3 10.58%, #FF41BB 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-family: 'Syncopate', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-
-    width: 100%;
-    margin: 1.5rem 0;
-}
-
-
-
-.background-sobre-mim-v1 {
-    background: linear-gradient(90deg, rgba(71, 109, 254, 0.05) 0%, rgba(153, 31, 254, 0.05) 45%, rgba(255, 18, 170, 0.05) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Syncopate", sans-serif;
-    font-size: 8rem;
-    font-weight: 700;
-
-    height: 8rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-
-    top: 58rem;
-    left: -4rem;
-    z-index: 1;
-}
-
-.background-sobre-mim-v2 {
-    background: linear-gradient(90deg, rgba(71, 109, 254, 0.05) 0%, rgba(153, 31, 254, 0.05) 45%, rgba(255, 18, 170, 0.05) 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Syncopate", sans-serif;
-    font-size: 8rem;
-    font-weight: 700;
-
-    height: 8rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-
-    top: 95rem;
-    right: -35rem;
-    z-index: 1;
 }
 
 .conteudo-sobre-mim {
@@ -248,11 +209,10 @@ nav {
     font-weight: 900;
 }
 
-
-
 .skills-sobre-mim {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10rem;
     padding: 2rem 0;
 }
@@ -272,4 +232,64 @@ nav {
 .skills-sobre-mim p {
     color: #EAEAEA;
     font-size: 1rem;
+}
+
+/*MEUS TRABALHOS*/
+
+.projetos-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 6% 5% 4% 5%;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.projetos-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+  gap: 5rem;
+}
+
+.projetos-sub-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.projetos-content {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projetos-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem; /* Ajuste a largura da borda */
+  border-radius: 1rem; /* Bordas arredondadas */
+  background: linear-gradient(30deg, #5C7EFF 10.80%,  #7844a3 33.75%, #FF41BB 90.57%);
+}
+
+
+.projetos-content img {
+  width: 20rem;
+  border-radius: 1rem;
+  
+}
+
+
+.projetos-content p {
+  color: #EAEAEA;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
 }

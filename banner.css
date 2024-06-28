@@ -6,30 +6,30 @@
   .light1 {
     top: 36%;
     left: -6%;
-    width: 600px;
-    height: 650px;
+    width: 90%;
+    height: 90%;
     transform: rotate(-90deg);
-    filter: blur(150px);
+    filter: blur(90px);
     animation: move1 15s linear infinite;
   }
   
   .light2 {
     left: 14%;
     top: -62%;
-    width: 700px;
-    height: 750px;
+    width: 90%;
+    height: 90%;
     transform: rotate(110.024deg);
     filter: blur(150px);
-    animation: move2 15s linear infinite;
+    animation: move2 10s linear infinite;
   }
   
   .light3 {
     top: 20%;
     left: 45%;
-    width: 800px;
-    height: 850px;
+    width: 90%;
+    height: 90%;
     transform: rotate(110.024deg);
-    filter: blur(150px);
+    filter: blur(80px);
     animation: move3 15s linear infinite;
     
   }
@@ -37,18 +37,18 @@
   .light4 {
     right: -8%;
     top: -38%;
-    width: 654px;
-    height: 650px;
+    width: 90%;
+    height: 90%;
     transform: rotate(110.024deg);
-    filter: blur(150px);
-    animation: move4 15s linear infinite;
+    filter: blur(100px);
+    animation: move4 10s linear infinite;
   }
 
   .light5 {
     top: -15%;
     right: -5%;
-    width: 700px;
-    height: 647px;
+    width: 90%;
+    height: 90%;
     transform: rotate(110.024deg);
     filter: blur(150px);
     animation: move5 15s linear infinite;
@@ -66,41 +66,41 @@
   }
   
 @keyframes move1 {
-    0% {transform: translate(0, 0);}
-    25% {transform: translate(20vw, -80vh);}
-    50% {transform: translate(70vw, -70vh); }
-    75% {transform: translate(55vw, -10vh); }
-    100% {transform: translate(0, 0);} 
+    0% {transform: translate(-20vw, 0);}
+    25% {transform: translate(10vw, -80vh);}
+    50% {transform: translate(56vw, -70vh); }
+    75% {transform: translate(36vw, -10vh); }
+    100% {transform: translate(-20vw, 0);} 
 }  
 
  @keyframes move2 {
-    0% {transform: translate(0, 0);}
-    25% {transform: translate(30vw, 5vh); }
-    50% {transform: translate(25vw, 100vh);}
-    75% {transform: translate(-30vw, 90vh);}
-    100% {transform: translate(0, 0);}
+    0% {transform: translate(0, 30vh);}
+    25% {transform: translate(32vw, 24vh); }
+    50% {transform: translate(45vw, 120vh);}
+    75% {transform: translate(-50vw, 90vh);}
+    100% {transform: translate(0, 30vh);}
 } 
 
  @keyframes move3 {
     0% {transform: translate(0, 0);}
-    25% {transform: translate(-65vw, -20vh); }
-    50% {transform: translate(-55vw, -100vh);}
-    75% {transform: translate(0, -90vh);}
+    25% {transform: translate(-80vw, -20vh); }
+    50% {transform: translate(-55vw, -55vh);}
+    75% {transform: translate(-10vh, -40vh);}
     100% {transform: translate(0, 0);}
 } 
 
 @keyframes move4 {
     0% {transform: translate(0, 10vh);}
-    25% {transform: translate(-20vw, 80vh); }
-    50% {transform: translate(-90vw, 70vh);}
-    75% {transform: translate(-75vw, 10vh);}
+    25% {transform: translate(20vw, 80vh); }
+    50% {transform: translate(-65vw, 70vh);}
+    75% {transform: translate(-22vw, 10vh);}
     100% {transform: translate(0, 10vh);}
 }
 
 @keyframes move5 {
     0% {transform: translate(0, 0);}
-    25% {transform: translate(-35vw, 30vh); }
-    50% {transform: translate(-80vw, 10vh);}
+    25% {transform: translate(20vw, 55vh); }
+    50% {transform: translate(-56vw, 50vh);}
     75% {transform: translate(-40vw, -20vh);}
     100% {transform: translate(0, 0);}
 }

@@ -34,7 +34,7 @@
 }
 
   .section-titles {
-    background: linear-gradient(91deg, #5C7EFF 0.05%,  #7844a3 10.58%, #FF41BB 100%);
+    background: linear-gradient(91deg, #5C7EFF, #FF41BB 22%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -56,6 +56,7 @@
     align-items: center;
     justify-content: flex-end;
     z-index: 100;
+    
 }
 
 .header-black {
@@ -83,12 +84,13 @@ nav {
   align-items: center;
   justify-content: center;
   transition: 0.2s all ease-in-out;
-  color: #e4e4e4;
+  color: #EAEAEA;
 }
 
 .menu a:hover {
   opacity: 1;
-  color: #a6a5ff;
+  color: #5C7EFF;
+
 }
 
 .menu-icon {
@@ -109,6 +111,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -172,6 +175,10 @@ nav {
     gap: 5rem;
 }
 
+.sobre-mim img {
+  width: 40%;
+}
+
 .texto-sobre-mim {
     display: flex;
     flex-direction: column;
@@ -213,30 +220,32 @@ nav {
 }
 
 .skills-sobre-mim {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-    gap: 10rem;
-    padding: 2rem 0;
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.skills-sobre-mim div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    gap: 1rem;  
+.skill {
+  display: flex;
+  flex-direction: column;  
+  gap: 1rem;  
 }
 
-.skills-sobre-mim img {
-    width: 4rem;
+.skill img {
+  height: 4rem;
 }
 
-.skills-sobre-mim p {
+.skill p {
     color: #EAEAEA;
     font-size: 1rem;
+    text-align: center;
+    height: 3rem;
+    line-height: 1.2rem;
 }
 
 /*MEUS TRABALHOS*/
@@ -258,7 +267,6 @@ nav {
   gap: 3rem;
 
   border-radius: 24px;
-  /* From https://css.glass */
   background: rgba(9, 10, 12, 0.30196078431372547);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -267,27 +275,33 @@ nav {
 }
 
 .projetos-sub-box {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .projetos-content {
-  width: 22rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .project-link {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .project-link img {
-  width: 22rem;
+  width: 20rem;
+  width: 20rem;
   border-radius: 1rem;
 }
 
@@ -295,7 +309,9 @@ nav {
   color: #EAEAEA;
   font-size: 1rem;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
+  height: 3rem;
+  width: 70%;
 }
 
 /*CONTATO*/
@@ -314,52 +330,50 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 0 4%;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .contato-content > p {
   font-size: 1rem;
   color: #EAEAEA;
   text-align: center;
-  width: 70%;
+  width: 100%;
 }
 
 .contato-links {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 20rem;
+  justify-content: space-evenly;
 }
 
-.contato-links-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
+@media screen and (max-width: 1100px) {
+  .projetos-sub-box {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
-.contato-links-box img{
-  width: 4rem;
-}
-
-.contato-links-box p{
-  font-size: 1rem;
-  color: #EAEAEA;
-}
-
-
-@media screen and (min-width: 1150px) and (max-width: 1250px) {
-
-}
-
-@media screen and (min-width: 1100px) and (max-width: 1149px) {
-  
-}
-
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 900px) {
   nav {
     width: 60%;
   }
+
+  .title h1 {
+    font-size: 5rem;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  .sobre-mim > img {
+    display: none;
+  }
+
+  .texto-sobre-mim p {
+    text-align: justify;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -396,8 +410,23 @@ nav {
 
   .menu-icon {
     display: block;
-    color: #e4e4e4;
+    color: #EAEAEA;
     font-size: 28px;
     cursor: pointer;
+  }
+
+  .title {
+    gap: 0;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+  .title h2 {
+    font-size: 1.5rem;
+  }
+
+  .contato-links img {
+    width: 80%;
   }
 }

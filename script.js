@@ -1,13 +1,21 @@
-window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    
-    // Calcula 90% da altura da janela (viewport)
-    const scrollThreshold = window.innerHeight * 0.8;
-    
-    // Verifica se o scroll vertical da página atingiu 100vh
-    if (window.scrollY >= scrollThreshold) {
+const header = document.getElementById('header');
+const menuToggle = document.getElementById('menu-toggle');
+
+function atualizarCorHeader() {
+    const scrollThreshold = window.innerHeight * 0.9;
+
+    if (window.scrollY >= scrollThreshold || menuToggle.checked) {
         header.classList.add('header-black');
     } else {
-        header.classList.remove('header-black');
+        setTimeout(() => {
+            if (!menuToggle.checked) {
+                header.classList.remove('header-black');
+            }
+        }, 300); 
     }
-});
+}
+
+
+window.addEventListener('scroll', atualizarCorHeader);
+
+menuToggle.addEventListener('change', atualizarCorHeader);

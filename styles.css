@@ -226,11 +226,11 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   position: relative;
 }
 
 .skill {
+  width: 30%;
   display: flex;
   flex-direction: column;  
   gap: 1rem;  
@@ -370,6 +370,10 @@ nav {
     display: none;
   }
 
+  .skills-sobre-mim {
+    flex-wrap: wrap;
+  }
+
   .texto-sobre-mim p {
     text-align: justify;
   }
@@ -385,6 +389,7 @@ nav {
   .menu {
     flex-direction: column;
     background-color: #090A0C;
+    box-shadow: 0px 8px 16px rgba(108, 105, 105, 0.1);
     align-items: start;
     position: absolute;
     top: 4rem;

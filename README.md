@@ -3,8 +3,6 @@
 
 Landing Page responsiva desenvolvida em HTML, CSS e JavaScript. Tendo como objetivo apresentar meus principais trabalhos desenvolvidos.
 
-<br>
-
 ## • Sobre • 
 Ao longo da página, você poderá encontrar algumas informações a meu respeito, alguns dos principais projetos que desenvolvi, onde é possível acessar cada um deles e, por fim, meios de contatos caso queira conversar :)
 <br><br>

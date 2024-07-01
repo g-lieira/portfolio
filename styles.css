@@ -347,6 +347,25 @@ nav {
   justify-content: space-evenly;
 }
 
+/*---------*/
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EAEAEA;
+  border-radius: 6px; 
+}
+
+
+
+/*RESPONSIVO*/
+
 @media screen and (max-width: 1100px) {
   .projetos-sub-box {
     flex-wrap: wrap;

@@ -185,6 +185,7 @@ nav {
 .sobre-mim-text p {
   font-size: 1rem;
   color: #EAEAEA;
+  line-height: 1.8rem;
 }
 
 .sobre-mim-text h2 {
@@ -330,11 +331,12 @@ nav {
   gap: 3rem;
 }
 
-.contato-content > p {
+.contato-content p {
   font-size: 1rem;
   color: #EAEAEA;
   text-align: center;
   width: 100%;
+  line-height: 1.8rem;
 }
 
 .contato-links {

@@ -8,12 +8,9 @@
     border: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 32px;
     scroll-behavior: smooth;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
   }
 
   body {
@@ -375,7 +372,7 @@ nav {
 
 @media screen and (max-width: 900px) {
   nav {
-    width: 60%;
+    width: 65%;
   }
 
   .title h1 {
@@ -385,7 +382,7 @@ nav {
     font-size: 2rem;
   }
 
-  .sobre-mim > img {
+  .sobre-mim-box > img {
     display: none;
   }
 
@@ -393,8 +390,33 @@ nav {
     flex-wrap: wrap;
   }
 
-  .texto-sobre-mim p {
+  .sobre-mim-text p {
     text-align: justify;
+    font-size: 0.9rem;
+  }
+
+  .sobre-mim-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .graduacao-sobre-mim h2 {
+    font-size: 1rem;
+  }
+
+  .graduacao-sobre-mim p {
+    font-size: 0.9rem;
+  }
+
+  .skill p {
+    font-size: 0.9rem;
+  }
+
+  .projetos-content p{
+    font-size: 0.9rem;
+  }
+
+  .contato-content p {
+    font-size: 0.9rem;
   }
 
 }

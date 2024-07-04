@@ -294,7 +294,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s ease; 
 
+}
+
+.project-link:hover {
+  opacity: 0.7;
 }
 
 .project-link img {

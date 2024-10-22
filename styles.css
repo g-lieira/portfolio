@@ -195,23 +195,23 @@ nav {
     font-weight: 700;
 }
 
-.formacao-academica {
+.professional-container {
     display: flex;
     gap: 1rem;
 }
 
-.formacao-academica img {
+.professional-container img {
     width: 2rem;
     height: 1.5rem;
     margin-top: 0.8rem;
 }
 
-.graduacao-sobre-mim {
+.professional-content {
     display: flex;
     flex-direction: column;
 }
 
-.graduacao-sobre-mim h2 {
+.professional-content h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 900;
@@ -410,11 +410,11 @@ nav {
     font-size: 1.2rem;
   }
 
-  .graduacao-sobre-mim h2 {
+  .professional-content h2 {
     font-size: 1rem;
   }
 
-  .graduacao-sobre-mim p {
+  .professional-content p {
     font-size: 0.9rem;
   }
 
